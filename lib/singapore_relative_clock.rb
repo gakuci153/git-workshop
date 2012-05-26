@@ -4,7 +4,12 @@ class SingaporeRelativeClock
 	
 	def timeDifferenceTo(city)
 		@finder = GMTOffsetFinder.new
-		@finder.offsetFor(city)
+		
+		@SST = 8.0
+		
+		@utcOffset = @finder.offsetFor(city)
+		
+		@SST - @utcOffset
 	end
 
 end
