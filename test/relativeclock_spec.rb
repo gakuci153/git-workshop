@@ -6,7 +6,7 @@ describe SingaporeRelativeClock do
 	end
 
 	it "should give -3 hours to Sydney during DST" do
-		@clock.timeDifferenceTo("Sydney").should == -3.0
+		@clock.timeDifferenceTo("Sydney").should == -2
 	end
 	
 	it "should ask for input if city is missing" do
