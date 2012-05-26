@@ -10,7 +10,7 @@ describe SingaporeRelativeClock do
 	end
 	
 	it "should ask for input if city is missing" do
-		@clock.timeDifferenceTo("").should_not be_nil
+		@clock.timeDifferenceTo(" ").should_not be_nil
 	end
 
 end
