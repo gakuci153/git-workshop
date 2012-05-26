@@ -9,8 +9,5 @@ describe SingaporeRelativeClock do
 		@clock.timeDifferenceTo("Sydney").should == -2.0
 	end
 	
-	it "should ask for input if city is missing" do
-		@clock.timeDifferenceTo(" ").should_not be_nil
-	end
 
 end
